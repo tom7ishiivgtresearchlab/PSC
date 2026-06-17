@@ -1,241 +1,241 @@
-# プランク球体理論：式の全体整理
-**著者：Tsutomu Ishii（石井 努）、Independent Researcher, Nagano, Japan**
-**日付：2026年6月16日**
+# Planck Sphere Cosmology: Complete Equation Overview
+**Author:** Tsutomu Ishii, Independent Researcher, Nagano, Japan
+**Date:** June 16, 2026
 
-※本文書においてプランク球体を数学的計算上4πという球面の数値が確認されることから球体として扱う（formulation文書の公理3a参照）。ただし①プランクスケールでの量子揺らぎにより純粋な静的球体ではない可能性、②初期状態（プランク球体）が真に球体であるか観測的に未確定、③現在の宇宙全体の形状も観測的に未確定——これら三つの理由から、development文書では球面含有体と表記している。物理的留保の詳細はdevelopment文書およびformulation文書の公理3bを参照されたい。
-
----
-
-## 1. 核心統合式（等価）
-
-$$\underbrace{A_P \times c^3}_{\text{光速三次元情報空間}} = 4\pi \times \hbar \times G = 4\pi \times E_P \times t_P \times G = \frac{q_P^2 \times G}{\varepsilon_0 \times c}$$
-
-| 式 | 表現 | 性質 | 意味 |
-|----|------|------|------|
-| 式① | $A_P \times c^3 = 4\pi \times \hbar \times G$ | 静的・構造 | 宇宙の静的構造 |
-| 式② | $A_P \times c^3 = 4\pi \times E_P \times t_P \times G$ | 動的・過程 | 宇宙の経過的体動 |
-| 式③ | $A_P \times c^3 = \frac{q_P^2 \times G}{\varepsilon_0 \times c}$ | 場的・相互作用 | 電磁気×重力 |
-
-**式①②の関係：**
-$$\hbar = E_P \times t_P \text{（不確定性原理の極限）}$$
-
-**式①③の関係：**
-$$\hbar = \frac{q_P^2}{4\pi\varepsilon_0 c} \text{（プランク電荷の定義から）}$$
+*Note: In this document, the Planck Sphere is treated mathematically as a sphere, since the numerical value 4π — characteristic of a spherical surface — is confirmed in the core equation (see Axiom 3a in the formulation document). However, for the following three reasons, the physical caveat applies throughout: (1) quantum fluctuations at the Planck scale suggest it may not be a purely static sphere; (2) whether the initial state is truly spherical remains observationally unconfirmed; (3) the overall geometry of the present universe is also observationally unconfirmed. For details, see the note in the development document and Axiom 3b in the formulation document.*
 
 ---
 
-## 2. 式①②③から導出可能なもの
+## 1. Core Unified Identity (Equivalences)
 
-### 2-1. プランクスケールの量
+$$\underbrace{A_P \times c^3}_{\text{3D light-speed information space}} = 4\pi \times \hbar \times G = 4\pi \times E_P \times t_P \times G = \frac{q_P^2 \times G}{\varepsilon_0 \times c}$$
 
-| 量 | 式 | 導出元 |
-|----|-----|--------|
-| プランク長 | $\ell_P = \sqrt{A_P/4\pi}$ | 式① |
-| プランク面積 | $\ell_P^2 = \hbar G/c^3$ | 式① |
-| プランク球体表面積 | $A_P = 4\pi\ell_P^2$ | 定義 |
-| プランク体積 | $V_P = \frac{4}{3}\pi\ell_P^3$ | 式① |
-| プランク時間 | $t_P = \ell_P/c = \hbar/E_P$ | 式② |
-| プランクエネルギー | $E_P = \hbar/t_P$ | 式② |
-| プランク質量 | $m_P = E_P/c^2$ | 式② |
-| プランク温度 | $T_P = E_P/k_B$ | 式②+kB |
-| プランク電荷 | $q_P = \sqrt{4\pi\varepsilon_0\hbar c}$ | 式③ |
+| Identity | Expression | Nature | Meaning |
+|----------|-----------|--------|---------|
+| ① | $A_P \times c^3 = 4\pi \times \hbar \times G$ | Static, structural | Static structure of the universe |
+| ② | $A_P \times c^3 = 4\pi \times E_P \times t_P \times G$ | Dynamic, processual | Progressive dynamics of the universe |
+| ③ | $A_P \times c^3 = \frac{q_P^2 \times G}{\varepsilon_0 \times c}$ | Field-theoretic, interactional | Electromagnetism × gravity |
 
-### 2-2. 基本定数
+**Relationship between ① and ②:**
+$$\hbar = E_P \times t_P \text{ (limiting form of the uncertainty principle)}$$
 
-| 定数 | 式 | 導出元 |
-|------|-----|--------|
-| 光速c | $(4\pi\hbar G/A_P)^{1/3}$ | 式① |
-| 重力定数G | $A_P c^3/4\pi\hbar$ | 式① |
-| プランク定数ℏ | $A_P c^3/4\pi G$ | 式① |
-| 素電荷e | $q_P\sqrt{\alpha}$ | 式③+α |
-| 時空剛性c⁴ | $4\pi\hbar c/A_P$ | 式① |
-
-### 2-3. 幾何・情報
-
-| 量 | 式 | 意味 |
-|----|-----|------|
-| 球面（4π） | 立体角 | 球体の必然（注記参照） |
-| 情報量 | $I = \pi$（ビット） | 数学的必然 |
-| cの乗数列 | c¹→c²→c³→c⁴→c⁵ | 時空の展開 |
-
-### 2-4. cの乗数列が表すもの
-
-| 乗数 | 意味 |
-|------|------|
-| c¹ | 光・速度 |
-| c² | 質量エネルギー（E=mc²） |
-| c³ | 3次元空間 |
-| c⁴ | 時空剛性 |
-| c⁵ | 時間（プランク時間） |
+**Relationship between ① and ③:**
+$$\hbar = \frac{q_P^2}{4\pi\varepsilon_0 c} \text{ (from the definition of Planck charge)}$$
 
 ---
 
-## 3. 分離として表されるもの
+## 2. Quantities Derivable from Identities ①②③
 
-### 3-1. 四つの力の分離過程
+### 2-1. Planck-Scale Quantities
+
+| Quantity | Formula | Source |
+|----------|---------|--------|
+| Planck length | $\ell_P = \sqrt{A_P/4\pi}$ | ① |
+| Planck area | $\ell_P^2 = \hbar G/c^3$ | ① |
+| Planck Sphere surface area | $A_P = 4\pi\ell_P^2$ | Definition |
+| Planck volume | $V_P = \frac{4}{3}\pi\ell_P^3$ | ① |
+| Planck time | $t_P = \ell_P/c = \hbar/E_P$ | ② |
+| Planck energy | $E_P = \hbar/t_P$ | ② |
+| Planck mass | $m_P = E_P/c^2$ | ② |
+| Planck temperature | $T_P = E_P/k_B$ | ②+kB |
+| Planck charge | $q_P = \sqrt{4\pi\varepsilon_0\hbar c}$ | ③ |
+
+### 2-2. Fundamental Constants
+
+| Constant | Formula | Source |
+|----------|---------|--------|
+| Speed of light c | $(4\pi\hbar G/A_P)^{1/3}$ | ① |
+| Gravitational constant G | $A_P c^3/4\pi\hbar$ | ① |
+| Reduced Planck constant ℏ | $A_P c^3/4\pi G$ | ① |
+| Elementary charge e | $q_P\sqrt{\alpha}$ | ③+α |
+| Spacetime rigidity c⁴ | $4\pi\hbar c/A_P$ | ① |
+
+### 2-3. Geometry and Information
+
+| Quantity | Formula | Meaning |
+|----------|---------|---------|
+| Spherical surface (4π) | Solid angle | Mathematical necessity of the sphere (see note) |
+| Information content | $I = \pi$ (bits) | Mathematical necessity |
+| Power series of c | c¹→c²→c³→c⁴→c⁵ | Expansion of spacetime |
+
+### 2-4. What the Power Series of c Represents
+
+| Power | Meaning |
+|-------|---------|
+| c¹ | Light, velocity |
+| c² | Mass-energy (E=mc²) |
+| c³ | Three-dimensional space |
+| c⁴ | Spacetime rigidity |
+| c⁵ | Time (Planck time) |
+
+---
+
+## 3. Quantities Expressed as Separations
+
+### 3-1. Separation of the Four Fundamental Forces
 
 $$A_P \times c^3 = \frac{e^2 \times G}{\alpha \times \varepsilon_0 \times c}$$
 
-αの値が変化することで四つの力が分離：
+As the value of α decreases from the Planck scale, the four forces separate:
 
-| 段階 | 力 | 結合定数α | 備考 |
-|------|-----|-----------|------|
-| プランク球体 | 全統一 | α≈1 | 全力が統一 |
-| 第1分離 | 強い核力 | αs≈1 | 最初に分離 |
-| 第2分離 | 弱い核力 | αw≈10⁻⁶ | 次に分離 |
-| 第3分離 | 電磁気力 | α≈1/137 | 次に分離 |
-| 第4分離 | 重力 | αG≈10⁻³⁸ | 最後に分離 |
+| Stage | Force | Coupling constant α | Note |
+|-------|-------|---------------------|------|
+| Planck Sphere | All unified | α≈1 | All forces unified |
+| 1st separation | Strong nuclear force | αs≈1 | Separates first |
+| 2nd separation | Weak nuclear force | αw≈10⁻⁶ | Separates next |
+| 3rd separation | Electromagnetic force | α≈1/137 | Separates next |
+| 4th separation | Gravity | αG≈10⁻³⁸ | Separates last |
 
-### 3-2. VGT・OFTの並列分岐との対応
+### 3-2. Correspondence with the Parallel Branching Structure of VGT and OFT
 
-$$\underbrace{A_P \times c^3}_{\text{光速三次元情報空間}} = \underbrace{4\pi \times \hbar \times G}_{\text{量子×重力}} = \underbrace{4\pi \times k_B \times T_P \times t_P \times G}_{\text{熱×重力}} = \underbrace{\frac{q_P^2 \times G}{\varepsilon_0 \times c}}_{\text{電磁気×重力}}$$
+$$\underbrace{A_P \times c^3}_{\text{3D light-speed information space}} = \underbrace{4\pi \times \hbar \times G}_{\text{quantum × gravity}} = \underbrace{4\pi \times k_B \times T_P \times t_P \times G}_{\text{heat × gravity}} = \underbrace{\frac{q_P^2 \times G}{\varepsilon_0 \times c}}_{\text{electromagnetism × gravity}}$$
 
-これはVGT（仮想重力理論）・OFT（根源場理論）における並列分岐構造と高い整合性を示す。
-
----
-
-## 4. 間接的に内在するもの
-
-| 量 | 内在の仕方 | 備考 |
-|----|-----------|------|
-| オイラー数e | πを通じて（e^iπ＝-1） | 波動関数に潜在 |
-| ボルツマン定数kB | TPとの関係で式②に追加可能 | 熱統計力学 |
-| 微細構造定数α | 素電荷eとε₀を通じて | 電磁気の強さ |
+This shows high structural consistency with the parallel branching structure in VGT (Virtual Gravity Theory) and OFT (Origin Field Theory).
 
 ---
 
-## 5. まだ外にあるもの（未解決）
+## 4. Quantities Indirectly Inherent
 
-| 量 | 備考 |
-|----|------|
-| 素粒子の質量比 | なぜその値か未解明 |
-| 宇宙定数Λ | スケール問題あり（下記参照） |
-| ダークマター | 正体未解明 |
-| 強い核力の詳細 | αsは近似値 |
+| Quantity | How it is inherent | Note |
+|----------|--------------------|------|
+| Euler's number e | Through π (via e^iπ = −1) | Latent in wave functions |
+| Boltzmann constant kB | Addable to ② via TP | Thermal statistical mechanics |
+| Fine structure constant α | Through elementary charge e and ε₀ | Strength of electromagnetism |
 
 ---
 
-## 6. 全体像
+## 5. Quantities Not Yet Accounted For (Unresolved)
+
+| Quantity | Note |
+|----------|------|
+| Ratios of elementary particle masses | Why these specific values — unresolved |
+| Cosmological constant Λ | Scale problem (see below) |
+| Dark matter | Nature unknown |
+| Details of strong nuclear force | αs is an approximation |
+
+---
+
+## 6. Overall Picture
 
 ```
-プランク球体
-（AP・c・ℏ・G・EP・tP・qP・ε₀・π・4πを内包）
-　　　　　　↓
-光速三次元情報空間（AP×c³）と等価
-　　　　　　↓
-式①：光速三次元情報空間 ＝ 量子×重力（静的構造）
-式②：光速三次元情報空間 ＝ エネルギー×時間×重力（経過的体動）
-式③：光速三次元情報空間 ＝ 電磁気×重力（場）
-　　　　　　↓
-　　　　　分離
-　　　　　　↓
-強い核力→弱い核力→電磁気→重力
-　　　　　　↓
-　　　球面波として展開
-　　　　　　↓
-　　　　現在の宇宙
+Planck Sphere
+(contains AP, c, ℏ, G, EP, tP, qP, ε₀, π, 4π)
+        ↓
+Equivalent to 3D light-speed information space (AP×c³)
+        ↓
+①: 3D light-speed information space = quantum × gravity (static structure)
+②: 3D light-speed information space = energy × time × gravity (progressive dynamics)
+③: 3D light-speed information space = electromagnetism × gravity (field)
+        ↓
+    Separation
+        ↓
+Strong → Weak → Electromagnetic → Gravitational
+        ↓
+  Expansion as spherical wave
+        ↓
+    Present universe
 ```
 
 ---
 
-## 7. 宇宙定数Λの導出と問題
+## 7. Derivation of the Cosmological Constant Λ and Its Problem
 
-式①からGを代入して導出：
+Derived by substituting G from Identity ①:
 
 $$\Lambda(t) \sim \frac{1}{R(t)^2}$$
 
-| 時期 | R(t) | Λ |
-|------|------|-----|
-| プランク球体誕生 | ℓP（最小） | ∼10⁷⁰ m⁻²（最大） |
-| 現在 | RH（ハッブル半径） | ∼10⁻⁵² m⁻²（観測値） |
-| 未来 | ∞ | →0 |
+| Era | R(t) | Λ |
+|-----|------|---|
+| Birth of Planck Sphere | ℓP (minimal) | ∼10⁷⁰ m⁻² (maximal) |
+| Present | RH (Hubble radius) | ∼10⁻⁵² m⁻² (observed) |
+| Future | ∞ | →0 |
 
 $$\frac{\Lambda_P}{\Lambda_{obs}} \approx 10^{122}$$
 
-**122桁のずれの解釈：**
+**Interpretation of the 122-order-of-magnitude discrepancy:**
 
-> Λのずれは「問題」ではなく、プランク球体から現在の宇宙への膨張経過を表している可能性がある
+> The discrepancy in Λ may not be a "problem" but rather a record of the expansion history from the Planck Sphere to the present universe.
 
-DESI2025の観測でΛが動的に変化している可能性が示されており、このモデルと整合する。
+DESI 2025 observations suggest that Λ may be dynamically varying, which is consistent with this model.
 
 ---
 
-## 8. ダーク系の導出試み
+## 8. Attempted Derivation of Dark Sector Quantities
 
-**ダークマター密度：**
+**Dark matter density:**
 
 $$\rho_{DM} \approx \frac{H^2\hbar}{A_P c^3} \approx \frac{H^2}{4\pi G}$$
 
-ダークマター密度はハッブル定数Hと重力定数Gだけで表せる。
+The dark matter density can be expressed solely in terms of the Hubble constant H and the gravitational constant G.
 
-**ダークエネルギー密度：**
+**Dark energy density:**
 
 $$\rho_{DE} \sim \frac{2\pi\hbar}{A_P^2 c}$$
 
-✅ 導出可能。ただしスケール問題あり。
+✅ Derivable. However, a scale problem remains.
 
-**物質・ダークマターの分岐：**
+**Branching of matter and dark matter:**
 
 ```
-プランク球体
-　↓展開
-式①（重力×量子）→ダークマター的成分
-式③（電磁気×重力）→通常物質的成分
-Λ→展開スケール因子
-　↓球面波として膨張
-現在の宇宙
-（通常物質5%・DM27%・DE68%）
+Planck Sphere
+  ↓ expansion
+Identity ① (gravity × quantum) → dark matter component
+Identity ③ (electromagnetism × gravity) → ordinary matter component
+Λ → expansion scale factor
+  ↓ expansion as spherical wave
+Present universe
+(ordinary matter ~5%, DM ~27%, DE ~68%)
 ```
 
 ---
 
-## 9. 現代物理の網羅状況：総括
+## 9. Coverage of Modern Physics: Summary
 
-| 分野 | 導出 | 備考 |
-|------|------|------|
-| 重力 | ✅ | 式① |
-| 量子力学 | ✅ | 式① |
-| 電磁気力 | ✅ | 式③ |
-| 熱統計力学 | ✅ | kB追加で式② |
-| 強い核力 | ✅ | αsの分離過程 |
-| 弱い核力 | ✅ | αwの分離過程 |
-| 宇宙定数Λ | ✅ | **但し観測値と122桁ずれ（未解決）** |
-| ダークマター | ✅ | H²/4πGとして導出 |
-| ダークエネルギー | ✅ | スケール問題あり |
+| Domain | Derivable | Note |
+|--------|-----------|------|
+| Gravity | ✅ | Identity ① |
+| Quantum mechanics | ✅ | Identity ① |
+| Electromagnetism | ✅ | Identity ③ |
+| Thermal statistical mechanics | ✅ | Identity ② with kB |
+| Strong nuclear force | ✅ | Separation via αs |
+| Weak nuclear force | ✅ | Separation via αw |
+| Cosmological constant Λ | ✅ | **But 122 orders of magnitude from observed value (unresolved)** |
+| Dark matter | ✅ | Derived as H²/4πG |
+| Dark energy | ✅ | Scale problem remains |
 
-**残された問題：**
+**Remaining problems:**
 
-| 問題 | 内容 |
-|------|------|
-| 宇宙定数問題 | Λの理論値と観測値の122桁のずれ |
-| スケール問題 | ダーク系の定量的精度 |
-| 素粒子質量比 | なぜその値か未解明 |
-| ダークマターの正体 | 具体的な粒子像が不明 |
-
----
-
-## 10. 宇宙の未来シナリオ
-
-Λ(t)の振る舞いによる分類：
-
-| シナリオ | Λの振る舞い | 終焉 | 観測との整合 |
-|---------|-----------|------|------------|
-| A | 減少→0 | ビッグクランチ | ✅ 高い |
-| B | 減少→0で安定 | 熱的死 | ✅ 中程度 |
-| C | 減少→マイナス | ビッグクランチ（急） | ✅ 中程度 |
-| D | 増加 | ビッグリップ | ❌ 低い |
-| E | 振動 | サイクリック | ✅ 高い |
-
-**プランク球体モデルが最も示唆するシナリオ：AまたはE**
-
-シナリオE（サイクリック宇宙）では：
-
-$$\mathcal{S}_P \xrightarrow{\text{膨張}} \text{宇宙} \xrightarrow{\text{収縮}} \mathcal{S}_P \xrightarrow{\text{バウンス}} \mathcal{S}_P \xrightarrow{\text{膨張}} \cdots$$
-
-> 宇宙はプランク球体として始まり、プランク球体として終わり、またプランク球体として始まる
-
-これはVGTの根源場が「始まりと終わりを持たない永続的な場」であるという描像と整合する。
+| Problem | Content |
+|---------|---------|
+| Cosmological constant problem | 122-order-of-magnitude gap between theoretical and observed Λ |
+| Scale problem | Quantitative precision of dark sector quantities |
+| Elementary particle mass ratios | Why these specific values — unresolved |
+| Nature of dark matter | No specific particle candidate |
 
 ---
 
-*この文書は2026年6月16日の議論における式の全体整理。VGT（仮想重力理論）・OFT（根源場理論）の数学的基盤として保存。Tsutomu Ishii（石井 努）Independent Researcher, Nagano, Japan*
+## 10. Future Scenarios for the Universe
+
+Classification by the behavior of Λ(t):
+
+| Scenario | Behavior of Λ | Fate | Consistency with observations |
+|----------|--------------|------|-------------------------------|
+| A | Decreases → 0 | Big Crunch | ✅ High |
+| B | Decreases → stabilizes at 0 | Heat death | ✅ Moderate |
+| C | Decreases → negative | Big Crunch (rapid) | ✅ Moderate |
+| D | Increases | Big Rip | ❌ Low |
+| E | Oscillates | Cyclic universe | ✅ High |
+
+**Scenarios most suggested by the Planck Sphere model: A or E**
+
+In Scenario E (cyclic universe):
+
+$$\mathcal{S}_P \xrightarrow{\text{expansion}} \text{universe} \xrightarrow{\text{contraction}} \mathcal{S}_P \xrightarrow{\text{bounce}} \mathcal{S}_P \xrightarrow{\text{expansion}} \cdots$$
+
+> The universe begins as the Planck Sphere, ends as the Planck Sphere, and begins again as the Planck Sphere.
+
+This is consistent with the picture in VGT where the root field is "a persistent field without beginning or end."
+
+---
+
+*This document is a complete equation overview from the discussion of June 16, 2026. Preserved as the mathematical foundation of VGT (Virtual Gravity Theory) and OFT (Origin Field Theory). Tsutomu Ishii, Independent Researcher, Nagano, Japan.*

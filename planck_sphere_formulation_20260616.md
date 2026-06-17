@@ -1,79 +1,79 @@
-# プランク球体理論：数学的定式化
-**著者：Tsutomu Ishii（石井 努）、Independent Researcher, Nagano, Japan**
-**日付：2026年6月16日**
-**ステータス：提案段階・未検証**
+# Planck Sphere Cosmology: Mathematical Formalization
+**Author:** Tsutomu Ishii, Independent Researcher, Nagano, Japan
+**Date:** June 16, 2026
+**Status:** Proposed / Unverified
 
-※本文書においてプランク球体を数学的計算上4πという球面の数値が確認されることから球体として扱う。物理的留保についてはdevelopment文書の注記を参照されたい。
+*Note: In this document, the Planck Sphere is treated mathematically as a sphere, since the numerical value 4π — characteristic of a spherical surface — is confirmed in the core equation. For the physical caveat, see the note in the development document.*
 
 ---
 
-## 1. 基本公理（出発点）
+## 1. Basic Axioms (Starting Point)
 
-**公理1：プランク球体の存在**
+**Axiom 1: Existence of the Planck Sphere**
 
-宇宙の最小単位はプランク長ℓPを半径とする球体（プランク球体）である。
+The minimal unit of the universe is a sphere with radius equal to the Planck length ℓP (the Planck Sphere):
 
 $$\mathcal{S}_P = \{x \in \mathbb{R}^3 : |x| \leq \ell_P\}$$
 
-**公理2：核心等式**
+**Axiom 2: Core Identity**
 
-プランク球体の表面積APを媒介として以下が成立する：
+The following holds, mediated by the surface area AP of the Planck Sphere:
 
 $$\boxed{A_P \times c^3 = 4\pi \times \hbar \times G}$$
 
-ここで：
-- $A_P = 4\pi\ell_P^2$（プランク球体表面積）
-- $c$（光速）
-- $\hbar$（ディラック定数）
-- $G$（重力定数）
+where:
+- $A_P = 4\pi\ell_P^2$ (surface area of the Planck Sphere)
+- $c$ (speed of light)
+- $\hbar$ (reduced Planck constant)
+- $G$ (gravitational constant)
 
-**公理3a（数学的事実）：**
+**Axiom 3a (Mathematical fact):**
 
-係数4πは球の立体角であり、これ以外の形状では公理2が成立しない。計算上プランク球体は球体として現れる。
+The coefficient 4π is the solid angle of a sphere; Axiom 2 does not hold for any other shape. Mathematically, the Planck Sphere appears as a sphere.
 
-**公理3b（物理的留保）：**
+**Axiom 3b (Physical caveat):**
 
-ただしプランクスケールでの量子揺らぎにより、プランク球体は純粋な静的球体ではなく動的な球面含有体として存在している可能性がある。詳細はdevelopment文書の注記を参照されたい。
+However, due to quantum fluctuations at the Planck scale, the Planck Sphere may exist as a dynamic sphere-containing body rather than a purely static sphere. For details, see the note in the development document.
 
 ---
 
-## 2. 等価定理
+## 2. Equivalence Theorems
 
-**定理1（構造・動的等価）：**
+**Theorem 1 (Structural and dynamic equivalence):**
 
 $$A_P \times c^3 = 4\pi \times \hbar \times G = 4\pi \times E_P \times t_P \times G$$
 
-導出：ℏ = EP × tP（不確定性原理の極限）を代入することで成立する。
+Derivation: Substituting ℏ = EP × tP (the limiting form of the uncertainty principle) yields the result directly.
 
-**定理2（電磁気等価）：**
+**Theorem 2 (Electromagnetic equivalence):**
 
 $$A_P \times c^3 = \frac{q_P^2 \times G}{\varepsilon_0 \times c}$$
 
-導出：プランク電荷の定義 qP² = 4πε₀ℏc を代入すると：
+Derivation: Substituting the definition of Planck charge, qP² = 4πε₀ℏc:
 
 $$\frac{q_P^2 G}{\varepsilon_0 c} = \frac{4\pi\varepsilon_0\hbar c \cdot G}{\varepsilon_0 c} = 4\pi\hbar G = A_P c^3$$
 
-**定理3（熱統計等価）：**
+**Theorem 3 (Thermal-statistical equivalence):**
 
 $$A_P \times c^3 = 4\pi \times k_B \times T_P \times t_P \times G$$
 
-導出：プランク温度の定義 EP = kBTP を定理1に代入することで成立する。
+Derivation: Substituting the definition of Planck temperature, EP = kBTP, into Theorem 1 yields the result.
 
-**統合等価式：**
+**Unified equivalence identity:**
 
 $$\boxed{A_P c^3 = 4\pi\hbar G = 4\pi E_P t_P G = \frac{q_P^2 G}{\varepsilon_0 c} = 4\pi k_B T_P t_P G}$$
 
 ---
 
-## 3. 導出定理
+## 3. Derivation Theorems
 
-**定理4（基本定数の相互導出）：**
+**Theorem 4 (Mutual derivation of fundamental constants):**
 
-公理2から各定数を解くと：
+Solving for each constant from Axiom 2:
 
 $$c = \left(\frac{4\pi\hbar G}{A_P}\right)^{1/3}, \quad G = \frac{A_P c^3}{4\pi\hbar}, \quad \hbar = \frac{A_P c^3}{4\pi G}$$
 
-**定理5（プランクスケールの導出）：**
+**Theorem 5 (Derivation of Planck-scale quantities):**
 
 $$\ell_P = \sqrt{\frac{A_P}{4\pi}} = \sqrt{\frac{\hbar G}{c^3}}$$
 
@@ -83,222 +83,222 @@ $$E_P = \frac{\hbar}{t_P} = \sqrt{\frac{\hbar c^5}{G}}$$
 
 $$m_P = \frac{E_P}{c^2} = \sqrt{\frac{\hbar c}{G}}$$
 
-**定理6（情報量の導出）：**
+**Theorem 6 (Derivation of information content):**
 
-ベッケンシュタイン式より：
+From the Bekenstein formula:
 
-$$I = \frac{A_P}{4\ell_P^2} = \frac{4\pi\ell_P^2}{4\ell_P^2} = \pi \text{（ビット）}$$
+$$I = \frac{A_P}{4\ell_P^2} = \frac{4\pi\ell_P^2}{4\ell_P^2} = \pi \text{ (bits)}$$
 
-プランク球体の情報量はπビットという数学的必然として現れる。
+The information content of the Planck Sphere appears as π bits — a mathematical necessity.
 
-**定理7（cの乗数列）：**
+**Theorem 7 (Power series of c):**
 
-公理2から自然に導出される階層構造：
+A hierarchical structure naturally derived from Axiom 2:
 
-| 乗数 | 量 | 導出 |
-|------|-----|------|
-| $c^1$ | 光速 | 基本 |
-| $c^2$ | 質量エネルギー | $E=mc^2$ |
-| $c^3$ | 空間スケール | 公理2左辺 |
-| $c^4$ | 時空剛性 | $c^4/G = 4\pi\hbar c/A_P$ |
-| $c^5$ | 時間スケール | $t_P = \sqrt{\hbar G/c^5}$ |
+| Power | Quantity | Derivation |
+|-------|----------|-----------|
+| $c^1$ | Speed of light | Fundamental |
+| $c^2$ | Mass-energy | $E=mc^2$ |
+| $c^3$ | Spatial scale | Left-hand side of Axiom 2 |
+| $c^4$ | Spacetime rigidity | $c^4/G = 4\pi\hbar c/A_P$ |
+| $c^5$ | Temporal scale | $t_P = \sqrt{\hbar G/c^5}$ |
 
 ---
 
-## 4. 力の統一と分離
+## 4. Unification and Separation of Forces
 
-**定理8（四力の統一）：**
+**Theorem 8 (Unification of four forces):**
 
-プランク球体内では全ての力の結合定数αが1に収束：
+Within the Planck Sphere, all coupling constants α converge to 1:
 
-$$\alpha_s \approx \alpha_w \approx \alpha \approx \alpha_G \approx 1 \text{（プランクスケール）}$$
+$$\alpha_s \approx \alpha_w \approx \alpha \approx \alpha_G \approx 1 \text{ (at Planck scale)}$$
 
-**定理9（力の分離過程）：**
+**Theorem 9 (Separation of forces):**
 
-素電荷eと微細構造定数αを通じて：
+Through the elementary charge e and fine structure constant α:
 
 $$A_P c^3 = \frac{e^2 G}{\alpha \varepsilon_0 c}$$
 
-αの値によって四力が分離する：
+As α decreases with decreasing energy, the four forces separate:
 
 $$\alpha_s(E) > \alpha_w(E) > \alpha(E) > \alpha_G(E) \quad (E < E_P)$$
 
-分離の順序：
+Order of separation:
 ```
-EP（全統一・α≈1）
-　↓エネルギー低下
-強い核力分離（αs≈1）
-　↓
-弱い核力分離（αw≈10⁻⁶）
-　↓
-電磁気力分離（α≈1/137）
-　↓
-重力分離（αG≈10⁻³⁸）
+EP (all unified, α≈1)
+  ↓ decreasing energy
+Strong nuclear force separates (αs≈1)
+  ↓
+Weak nuclear force separates (αw≈10⁻⁶)
+  ↓
+Electromagnetic force separates (α≈1/137)
+  ↓
+Gravity separates (αG≈10⁻³⁸)
 ```
 
 ---
 
-## 5. 宇宙論的定式化
+## 5. Cosmological Formalization
 
-**定理10（宇宙定数の導出）：**
+**Theorem 10 (Derivation of the cosmological constant):**
 
 $$\Lambda(t) \sim \frac{1}{R(t)^2}$$
 
-R(t)は宇宙のスケール因子。
+where R(t) is the cosmic scale factor.
 
-| 時期 | スケールR | Λの値 |
-|------|---------|-------|
-| プランク球体誕生 | ℓP（最小） | ∼10⁷⁰ m⁻²（最大） |
-| 現在 | RH（ハッブル半径） | ∼10⁻⁵² m⁻²（観測値） |
-| 未来 | ∞ | →0 |
+| Era | Scale R | Value of Λ |
+|-----|---------|-----------|
+| Birth of Planck Sphere | ℓP (minimal) | ∼10⁷⁰ m⁻² (maximal) |
+| Present | RH (Hubble radius) | ∼10⁻⁵² m⁻² (observed) |
+| Future | ∞ | →0 |
 
-**定理11（ダークマターの導出）：**
+**Theorem 11 (Derivation of dark matter density):**
 
 $$\rho_{DM} \sim \frac{H^2}{4\pi G}$$
 
-Hはハッブル定数。ダークマター密度は宇宙の膨張率と重力定数だけで表せる。
+H is the Hubble constant. The dark matter density can be expressed solely in terms of the cosmic expansion rate and the gravitational constant.
 
-**定理12（物質・ダークマターの分岐）：**
+**Theorem 12 (Branching of matter and dark matter):**
 
-式①と式③の分岐が物質とダークマターの分岐に対応：
+The branching of Identity ① and Identity ③ corresponds to the branching of matter and dark matter:
 
-$$\text{式①（重力×量子）} \rightarrow \text{ダークマター的成分}$$
-$$\text{式③（電磁気×重力）} \rightarrow \text{通常物質的成分}$$
+$$\text{Identity ① (gravity × quantum)} \rightarrow \text{dark matter component}$$
+$$\text{Identity ③ (electromagnetism × gravity)} \rightarrow \text{ordinary matter component}$$
 
 ---
 
-## 6. バリオン非対称性の導出試み
+## 6. Attempted Derivation of Baryon Asymmetry
 
-**問い：なぜ宇宙に反物質より物質が多いのか**
+**Question: Why does the universe contain more matter than antimatter?**
 
-観測値：
-$$\eta_{obs} = \frac{N_{物質} - N_{反物質}}{N_{物質}} \approx 6 \times 10^{-10}$$
+Observed value:
+$$\eta_{obs} = \frac{N_{\text{matter}} - N_{\text{antimatter}}}{N_{\text{matter}}} \approx 6 \times 10^{-10}$$
 
-プランク球体の中心点に量子揺らぎ（ℏ）があった場合、完全な対称性からわずかにずれが生じる。この揺らぎの累積効果としてバリオン非対称性が生まれたと考えられる。
+If quantum fluctuations (ℏ) exist at the center of the Planck Sphere, the perfect symmetry is slightly broken. The cumulative effect of these fluctuations is proposed as the origin of baryon asymmetry.
 
-**導出過程：**
+**Derivation:**
 
-第一候補：
+First candidate:
 $$\frac{\alpha^3}{4\pi^2} \approx 9.8 \times 10^{-9}$$
 
-観測値より約16倍大きい。16 = 2⁴で割ると：
+This is approximately 16 times larger than the observed value. Dividing by 16 = 2⁴:
 
 $$\boxed{\eta = \frac{\alpha^3}{16\pi^2} \approx 6.1 \times 10^{-10}}$$
 
-観測値 6 × 10⁻¹⁰ と誤差約1.7%で一致。
+This agrees with the observed value of 6 × 10⁻¹⁰ within approximately 1.7%.
 
-**16 = 2⁴の物理的意味：**
+**Physical meaning of 16 = 2⁴:**
 
-| 観点 | 意味 |
-|------|------|
-| 4次元時空 | 次元数4の二乗＝16 |
-| ディラック行列 | 4×4行列＝16成分 |
-| スピノル自由度 | 粒子×反粒子×スピン上下×スピン上下＝2⁴ |
+| Perspective | Meaning |
+|------------|---------|
+| 4-dimensional spacetime | Square of dimension 4 = 16 |
+| Dirac matrices | 4×4 matrix = 16 components |
+| Spinor degrees of freedom | particle × antiparticle × spin-up × spin-down = 2⁴ |
 
-**ディラック方程式との接続：**
+**Connection with the Dirac equation:**
 
-$$（i\gamma^\mu\partial_\mu - m）\psi = 0$$
+$$\left(i\gamma^\mu\partial_\mu - m\right)\psi = 0$$
 
-γ行列は4×4 = 16成分を持つ。ディラック方程式は特殊相対性理論と量子力学を**両立させた（接続した）**方程式であり、反物質の存在と電子のスピンを自然に導いた。そのディラック方程式の核心数16がバリオン非対称性の式に自然に現れた。
+The γ matrices have 4×4 = 16 components. The Dirac equation is the equation that unified special relativity and quantum mechanics in a consistent framework, naturally predicting the existence of antimatter and the spin of the electron. The number 16 — central to the Dirac equation — appears naturally in the baryon asymmetry formula.
 
-**最終式：**
+**Final formula:**
 
 $$\boxed{\eta = \frac{\alpha^3}{16\pi^2} \approx 6.1 \times 10^{-10}}$$
 
-| 要素 | 意味 |
-|------|------|
-| α³ | 電磁気力の三次量子補正 |
-| 16＝2⁴ | 4次元時空のディラック構造 |
-| π² | プランク球体の幾何学 |
+| Element | Meaning |
+|---------|---------|
+| α³ | Third-order quantum correction of the electromagnetic force |
+| 16 = 2⁴ | Dirac structure of 4-dimensional spacetime |
+| π² | Geometry of the Planck Sphere |
 
-**1.7%誤差の評価：**
+**Assessment of the 1.7% discrepancy:**
 
-| 誤差の範囲 | 物理学的評価 |
-|-----------|------------|
-| 0.1%以下 | 非常に強い理論的一致 |
-| **1〜2%** | **✅ 十分許容範囲内** |
-| 10%以下 | 議論に値する |
-| 10%以上 | 要再検討 |
+| Range of discrepancy | Physical assessment |
+|---------------------|---------------------|
+| Below 0.1% | Very strong theoretical agreement |
+| **1–2%** | **✅ Within acceptable range** |
+| Below 10% | Worthy of discussion |
+| Above 10% | Requires reconsideration |
 
-> **「誤差の範囲内で一致している」——現時点での最も正確な表現**
+> **"Agreement within the margin of error" — the most accurate characterization at this stage.**
 
-ただし完全な理論的導出には16の必然性のさらなる説明が必要。
+A further explanation of the theoretical necessity of 16 is required for a complete derivation.
 
 ---
 
-## 7. プランク球体の揺らぎの性質
+## 7. Nature of Quantum Fluctuations of the Planck Sphere
 
-量子揺らぎは不確定性原理の本質から止まることがない：
+Quantum fluctuations cannot cease, as they are intrinsic to the uncertainty principle:
 
 $$\Delta E \times \Delta t \geq \hbar$$
 
-**振幅：**
+**Amplitude:**
 $$\Delta E \sim E_P \approx 1.96 \times 10^9 \text{ J}$$
 
-**振動周期：**
-$$t_P \approx 5.39 \times 10^{-44} \text{ 秒}$$
+**Period:**
+$$t_P \approx 5.39 \times 10^{-44} \text{ s}$$
 
-**宇宙誕生から現在までの揺らぎの回数：**
-$$N = \frac{t_{宇宙}}{t_P} \approx \frac{4.35 \times 10^{17}}{5.39 \times 10^{-44}} \approx 8 \times 10^{60} \text{ 回}$$
+**Number of fluctuations from the birth of the universe to the present:**
+$$N = \frac{t_{\text{universe}}}{t_P} \approx \frac{4.35 \times 10^{17}}{5.39 \times 10^{-44}} \approx 8 \times 10^{60} \text{ times}$$
 
-**揺らぎの累積効果と観測的示唆：**
+**Cumulative effects and observational implications:**
 
-| 現象 | 揺らぎとの接続 |
-|------|--------------|
-| Λの変化（DESI2025） | 揺らぎの累積効果として変化 |
-| 宇宙背景放射のゆらぎ | 初期揺らぎの痕跡 |
-| 宇宙の大規模構造 | 揺らぎが種になった |
-| ハッブル定数問題 | 揺らぎの方向性の名残？ |
+| Phenomenon | Connection to fluctuations |
+|-----------|--------------------------|
+| Variation of Λ (DESI 2025) | Changes as cumulative effect of fluctuations |
+| CMB anisotropies | Traces of early fluctuations |
+| Large-scale structure of the universe | Fluctuations served as seeds |
+| Hubble tension | Possible remnant of directional fluctuations? |
 
-**観測的予測の候補：**
+**Candidate observational prediction:**
 
-> 揺らぎが続いているなら、宇宙の膨張速度に微細な「ゆらつき」が観測できるはず
-
----
-
-## 8. 命題：二極構造
-
-**命題1（プランク球体の二極性）：**
-
-プランク球体が回転（スピン）を持つとき、球面波の展開により二つの極が生まれる：
-
-$$\mathcal{S}_P^+ \text{（正極）} \longleftrightarrow \mathcal{S}_P^- \text{（負極）}$$
-
-これは物質と反物質の非対称性の起源、双極子的膨張の駆動力として解釈できる可能性がある。
+> If fluctuations continue, subtle "jitter" in the cosmic expansion rate should be observable.
 
 ---
 
-## 9. 残された課題（未解決問題）
+## 8. Proposition: Bipolar Structure
 
-| 課題 | 内容 | 重要度 |
-|------|------|--------|
-| Λの122桁問題 | 理論値と観測値のずれの定量的説明 | 最高 |
-| 素粒子質量比 | なぜその値か | 高 |
-| ダークマターの正体 | 具体的粒子像 | 高 |
-| 16の理論的必然性 | ディラック構造との接続の説明 | 高 |
-| 二極構造の数学的定式化 | スピノル・ツイスターとの接続 | 中 |
-| サイクリック宇宙の検証 | 観測的予測の導出 | 中 |
+**Proposition 1 (Bipolarity of the Planck Sphere):**
 
----
+When the Planck Sphere possesses rotation (spin), two poles emerge through the expansion of spherical waves:
 
-## 10. 現代物理への示唆と今後のステップ
+$$\mathcal{S}_P^+ \text{ (positive pole)} \longleftrightarrow \mathcal{S}_P^- \text{ (negative pole)}$$
 
-**有益な貢献候補：**
-
-1. プランク球体という単純な出発点から現代物理のほぼ全てが導出できる
-2. Λが定数でなく展開スケールの関数であるという描像（DESI2025と整合）
-3. 式①③の分岐がダークマターと通常物質の分岐に対応する可能性
-4. 四力の統一と分離をαの変化として記述
-5. バリオン非対称性をα³/16π²として1.7%精度で推定
-
-**今後のステップ：**
-
-1. Λの122桁問題への取り組み——展開スケール因子R(t)との定量的関係
-2. 16の理論的必然性の説明——4次元展開とディラック構造の接続
-3. 二極構造の数学的定式化——スピノル・ツイスターとの接続
-4. 観測的予測の導出——サイクリック宇宙の検証可能な予測
-5. VGT/OFTへの統合——根源場としてのプランク球体の位置づけ
+This may possibly be interpreted as the origin of the matter-antimatter asymmetry and the driving force of dipolar expansion.
 
 ---
 
-*この文書はプランク球体理論の数学的定式化の第一稿。提案段階・未検証。VGT（仮想重力理論）・OFT（根源場理論）の一部として発展させる予定。2026年6月16日。Tsutomu Ishii（石井 努）Independent Researcher, Nagano, Japan*
+## 9. Remaining Issues (Unresolved Problems)
+
+| Issue | Content | Priority |
+|-------|---------|----------|
+| The 122-order-of-magnitude Λ problem | Quantitative explanation of the gap between theoretical and observed values | Highest |
+| Elementary particle mass ratios | Why these specific values? | High |
+| Nature of dark matter | Specific particle candidate | High |
+| Theoretical necessity of 16 | Explanation of the connection with Dirac structure | High |
+| Mathematical formalization of bipolar structure | Connection to spinors and twistors | Medium |
+| Verification of cyclic universe | Derivation of testable predictions | Medium |
+
+---
+
+## 10. Implications for Modern Physics and Next Steps
+
+**Candidate contributions:**
+
+1. Nearly all of modern physics can be derived from the simple starting point of the Planck Sphere
+2. A picture in which Λ is not a constant but a function of the expansion scale (consistent with DESI 2025)
+3. The possibility that the branching of Identities ① and ③ corresponds to the branching of dark matter and ordinary matter
+4. Description of the unification and separation of four forces through the variation of α
+5. Estimation of baryon asymmetry as α³/16π² with 1.7% precision
+
+**Next steps:**
+
+1. Addressing the 122-order-of-magnitude Λ problem — quantitative relationship with the expansion scale factor R(t)
+2. Explaining the theoretical necessity of 16 — connection between 4-dimensional expansion and Dirac structure
+3. Mathematical formalization of bipolar structure — connection to spinors and twistors
+4. Derivation of observational predictions — testable predictions for the cyclic universe
+5. Integration into VGT/OFT — positioning the Planck Sphere as the root field's minimal unit
+
+---
+
+*This document is the first draft of the mathematical formalization of Planck Sphere Cosmology. Proposed stage — unverified. Intended to be developed as part of VGT (Virtual Gravity Theory) and OFT (Origin Field Theory). June 16, 2026. Tsutomu Ishii, Independent Researcher, Nagano, Japan.*

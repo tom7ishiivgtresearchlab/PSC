@@ -1,162 +1,162 @@
-# プランク球体宇宙論（PSC）：概念的入門と総合案内
-**著者：Tsutomu Ishii（石井 努）、Independent Researcher, Nagano, Japan**
-**日付：2026年6月16日**
-**ステータス：提案段階・未検証**
+# Planck Sphere Cosmology (PSC): Conceptual Introduction and General Guide
+**Author:** Tsutomu Ishii（石井 努）, Independent Researcher, Nagano, Japan
+**Date:** June 16, 2026
+**Status:** Proposed / Unverified
 
-※本文書はPSCの概念的入門および他の文書への案内を目的とした総合ノートである。数学的定式化はformulation文書、式の全体整理はequations文書、思考の経過はdevelopment文書を参照されたい。
-
----
-
-## 1. PSCとは何か
-
-プランク球体宇宙論（Planck Sphere Cosmology: PSC）は、プランク長ℓPを半径とする球体「プランク球体」を宇宙の幾何学的最小単位として提案し、そこから現代物理学の基本量を統一的に導出しようとする理論的枠組みである。
-
-**核心的問い：**
-
-> 宇宙の最小単位はプランク球体であり、その球面構造（4π）を通じて、光速三次元情報空間と量子・重力・電磁気・熱が等価で結ばれているのではないか？
+*Note: This document serves as a conceptual introduction to PSC and a guide to the accompanying documents. For mathematical formalization, see the formulation document; for the complete equation overview, see the equations document; for the development of ideas, see the development document.*
 
 ---
 
-## 2. 核心等式の直感的説明
+## 1. What is PSC?
+
+Planck Sphere Cosmology (PSC) is a theoretical framework that proposes the Planck Sphere — a sphere of radius equal to the Planck length ℓP — as the minimal geometric unit of the universe, and attempts to derive the fundamental quantities of modern physics from this single starting point.
+
+**Core question:**
+
+> Is the minimal unit of the universe the Planck Sphere, and through its spherical surface structure (4π), are the three-dimensional light-speed information space and quantum, gravitational, electromagnetic, and thermal quantities all equivalently connected?
+
+---
+
+## 2. Intuitive Explanation of the Core Identity
 
 $$\boxed{A_P \times c^3 = 4\pi \times \hbar \times G}$$
 
-**左辺：外に広がる世界**
+**Left-hand side: the outward-expanding world**
 
-- AP＝プランク球体の表面積（情報の舞台）
-- c³＝3次元光速空間
+- AP = surface area of the Planck Sphere (the arena of information)
+- c³ = three-dimensional light-speed space
 
-**右辺：内に潜む構造**
+**Right-hand side: the inward latent structure**
 
-- 4π＝球面の立体角（球面含有体の必然）
-- ℏ＝量子効果
-- G＝重力
+- 4π = solid angle of a spherical surface (a mathematical necessity of the sphere-containing body)
+- ℏ = quantum effect
+- G = gravitational constant
 
-> 光速三次元情報空間と量子重力球面含有体構造が完全に釣り合っている
+> The three-dimensional light-speed information space and the quantum-gravitational sphere-containing body structure are in perfect balance.
 
-この等式はさらに拡張され：
+This identity extends further to:
 
 $$A_P \times c^3 = 4\pi \times \hbar \times G = 4\pi \times E_P \times t_P \times G = \frac{q_P^2 \times G}{\varepsilon_0 \times c} = 4\pi \times k_B \times T_P \times t_P \times G$$
 
-光速三次元情報空間と重力×量子、重力×エネルギー×時間、重力×電磁気、重力×熱を等価で結ぶことができた。
+The three-dimensional light-speed information space can thus be connected equivalently to gravity×quantum, gravity×energy×time, gravity×electromagnetism, and gravity×heat.
 
 ---
 
-## 3. 球体か球面含有体か
+## 3. Sphere or Sphere-Containing Body?
 
-4πという球面の数値は数式上確認できる。しかし以下の三つの理由から球体とは断定せず「球面含有体」という表現も用いている：
+The numerical value 4π, characteristic of a spherical surface, appears in the core equation. However, for the following three reasons, the term "sphere-containing body" (球面含有体) is used in the Japanese version rather than asserting "sphere" outright:
 
-1. プランクスケールでの量子揺らぎにより純粋な静的球体ではない可能性
-2. 初期状態（プランク球体）が真に球体であるか観測的に未確定
-3. 現在の宇宙全体の形状も観測的に未確定
+1. Due to quantum fluctuations at the Planck scale, the Planck Sphere may not be a purely static sphere.
+2. Whether the initial state (Planck Sphere) is truly spherical remains observationally unconfirmed.
+3. The overall geometry of the present universe is also observationally unconfirmed.
 
-数学的定式化としての球体表記についてはformulation文書の公理3を参照されたい。
+In English, the term "Planck Sphere" is retained as an established convention. The physical caveat above applies throughout. For the mathematical treatment, see Axioms 3a and 3b in the formulation document.
 
 ---
 
-## 4. 既存物理学との関係
+## 4. Relationship to Existing Physics
 
-**k_SEGとの独立した一致：**
+**Independent convergence with k_SEG:**
 
-2025年10月、Enzo Cabrera Iglesias（Zenodo）は独立して以下の定数を提案した：
+In October 2025, Enzo Cabrera Iglesias (Zenodo) independently proposed the following constant:
 
 $$k_{SEG} = \frac{4\pi G}{c^3}$$
 
-これはGRの式の代数的整理を目的としたものであり、APや情報量への言及はない。
+This work aimed at algebraic simplification of GR equations and contains no reference to AP or information content.
 
-PSCは独立してプランク球体という幾何学的出発点から同様の構造に至った。両者は独立した到達であり、PSCの独自性は以下の点にある：
+PSC independently arrived at a structurally similar relationship starting from the Planck Sphere as a geometric unit. The two are independent findings. The originality of PSC lies in the following:
 
-- プランク球体（球面含有体）を宇宙の最小単位として位置づける
-- 情報量πビットという数学的必然の発見
-- 光速三次元情報空間と量子・重力・電磁気・熱の統合等価式
-- バリオン非対称性η≈α³/16π²という推定（観測値と誤差1.7%）
+- Positioning the Planck Sphere as the minimal unit of the universe
+- The discovery that the information content of the Planck Sphere is π bits (mathematical necessity)
+- The unified equivalence identity connecting the three-dimensional light-speed information space with quantum, gravitational, electromagnetic, and thermal quantities
+- The estimation of baryon asymmetry η ≈ α³/16π² (within 1.7% of the observed value)
 
-**既存物理学との整合：**
+**Consistency with existing physics:**
 
-| PSCの描像 | 既存物理学 | 状況 |
-|-----------|-----------|------|
-| プランク球体が最小単位 | プランクスケール | 確立 |
-| 情報量πビット | ベッケンシュタイン式から導出 | 計算は正確 |
-| 球面波展開 | インフレーション理論 | 整合 |
-| 回転・うねり | 量子スピン・ツイスター理論 | 整合 |
-| Λが動的に変化 | DESI2025観測 | 整合 |
-| 点は存在できない | 量子重力の基本認識 | 確立 |
+| PSC description | Existing physics | Status |
+|----------------|-----------------|--------|
+| Planck Sphere as minimal unit | Planck scale physics | Established |
+| Information content = π bits | Derived from Bekenstein formula | Mathematically correct |
+| Spherical wave expansion | Inflationary cosmology | Consistent |
+| Rotation and undulation | Quantum spin, Twistor theory | Consistent |
+| Λ varies dynamically | DESI 2025 observations | Consistent |
+| No physical point exists | Quantum gravity basics | Established |
 
 ---
 
-## 5. VGT・OFTへの接続
+## 5. Connection to VGT and OFT
 
-PSCは筆者が先行研究として取り組んでいるVGT（仮想重力理論：Virtual Gravity Theory）およびOFT（根源場理論：Origin Field Theory）と高い整合性を持つ。
+PSC shows high structural consistency with the author's prior work: VGT (Virtual Gravity Theory) and OFT (Origin Field Theory).
 
 ```
-根源場Ψ₀（OFT：根源場理論）
-　↓幾何学的最小単位として
-プランク球体（PSC：本論文）
-　↓展開・分岐
-重力‖電磁力（VGT：仮想重力理論）
-　↓
-現在の宇宙
+Root field Ψ₀ (OFT: Origin Field Theory)
+  ↓ as minimal geometric unit
+Planck Sphere (PSC: this work)
+  ↓ expansion and branching
+Gravity ‖ Electromagnetism (VGT: Virtual Gravity Theory)
+  ↓
+Present universe
 ```
 
-PSCはVGT/OFTの理論的基盤をプランク球体という幾何学的最小単位から支える新たな視点として位置づけられる。
+PSC is positioned as a new perspective that supports the theoretical foundation of VGT/OFT from the minimal geometric unit of the Planck Sphere.
 
 ---
 
-## 6. 現状評価
+## 6. Current Assessment
 
-| 観点 | 状況 |
-|------|------|
-| 数学的整合性 | ✅ 既存物理と矛盾なし |
-| 独自性 | ✅ k_SEGと独立に一致、球面含有体描像は独自 |
-| バリオン非対称性の推定 | ✅ 観測値と誤差1.7%以内 |
-| Λの動的変化 | ✅ DESI2025と整合 |
-| 定式化の完成度 | ⚠️ 概念的・定性的段階 |
-| 観測的予測 | 🔲 今後の課題 |
-| 査読可能な論文 | 🔲 数学的精緻化が必要 |
+| Aspect | Status |
+|--------|--------|
+| Mathematical consistency | ✅ No contradiction with existing physics |
+| Originality | ✅ Independent convergence with k_SEG; sphere-containing body framework is original |
+| Baryon asymmetry estimation | ✅ Within 1.7% of observed value |
+| Dynamic Λ | ✅ Consistent with DESI 2025 |
+| Completeness of formalization | ⚠️ Conceptual and semi-quantitative stage |
+| Observational predictions | 🔲 Future work |
+| Peer-reviewable paper | 🔲 Further mathematical precision required |
 
-本理論はSFではなく**未検証の理論的提案**の域にある。既存物理学と矛盾しない範囲で、現代物理の多くの側面に関わる可能性を持つ。
-
----
-
-## 7. 今後の研究展望と未解決問題
-
-**優先課題：**
-
-| 課題 | 内容 | 重要度 |
-|------|------|--------|
-| Λの122桁問題 | 理論値と観測値のずれの定量的説明 | 最高 |
-| 16の理論的必然性 | α³/16π²におけるディラック構造との接続 | 高 |
-| 素粒子質量比 | なぜその値か | 高 |
-| ダークマターの正体 | 具体的粒子像 | 高 |
-| 二極構造の定式化 | スピノル・ツイスターとの接続 | 中 |
-| サイクリック宇宙の検証 | 観測的予測の導出 | 中 |
-
-**気になる未解決の問い：**
-
-以下の概念とPSCの関わりは現時点では未解明であるが、今後の探求課題として記録しておく：
-
-**虚数iとの関係：**
-プランク球体の情報量πはオイラーの等式 e^iπ = -1 を通じて虚数iと構造的に繋がっている。また量子力学の波動関数ψ = Ae^iθ やディラック方程式のγ行列にもiが本質的に含まれる。PSCの枠組みの中で虚数iがどのような役割を果たすのか——これは未解明の問いである。
-
-**反物質との関係：**
-バリオン非対称性η≈α³/16π²は観測値と1.7%以内で一致するが、なぜ物質が反物質より多いのかの根本的説明にはなっていない。プランク球体の二極構造（正極・負極）が物質と反物質の分岐に対応する可能性があるが、これも未検証である。
-
-**オイラー数eとの関係：**
-πは自然に情報量として現れたが、もう一つの超越数であるオイラー数e（≈2.718）はPSCの式に直接現れていない。しかし波動関数を通じて間接的に内在している可能性がある。
-
-**これらは断定できる段階にはないが、PSCの理論的深化において重要な探求課題である。**
+This theory is not science fiction but falls within the domain of **unverified theoretical proposals**. It does not contradict existing physics and may bear on many aspects of modern physics.
 
 ---
 
-## 8. 各文書の案内
+## 7. Future Research Directions and Open Questions
 
-| 文書 | 役割 |
-|------|------|
-| planck_sphere_overview（本文書） | 概念的入門・総合案内ノート |
-| planck_sphere_development | 思考の経過と発展（12段階） |
-| planck_sphere_equations | 式の全体整理・導出可能量・宇宙論的シナリオ |
-| planck_sphere_formulation | 数学的定式化・公理・定理・命題 |
+**Priority issues:**
+
+| Issue | Content | Priority |
+|-------|---------|----------|
+| The 122-order-of-magnitude Λ problem | Quantitative explanation of the gap between theoretical and observed values | Highest |
+| Theoretical necessity of the factor 16 | Connection between α³/16π² and the Dirac spinor structure | High |
+| Ratios of elementary particle masses | Why these specific values? | High |
+| Nature of dark matter | Specific particle candidate | High |
+| Formalization of bipolar structure | Connection to spinors and twistors | Medium |
+| Verification of cyclic universe | Derivation of testable predictions | Medium |
+
+**Open questions of interest:**
+
+The following connections remain unresolved at this stage and are recorded here as topics for future exploration:
+
+**Relationship with the imaginary unit i:**
+The information content π of the Planck Sphere is structurally connected to the imaginary unit i through Euler's identity e^iπ = −1. Furthermore, i appears essentially in the quantum mechanical wave function ψ = Ae^iθ and in the γ matrices of the Dirac equation. What role, if any, does i play within the PSC framework? This remains an open question.
+
+**Relationship with antimatter:**
+The estimate η ≈ α³/16π² agrees with the observed baryon asymmetry within 1.7%, but it does not yet provide a fundamental explanation for why matter exceeds antimatter. The bipolar structure of the Planck Sphere (positive and negative poles) may correspond to the matter-antimatter branching, but this remains unverified.
+
+**Relationship with Euler's number e:**
+While π appeared naturally as the information content, the other transcendental number e (≈ 2.718) does not appear directly in the PSC equations. However, it may be indirectly present through the wave function. This is a point of interest for future investigation.
+
+**None of these can be asserted at this stage, but they represent important questions for the theoretical deepening of PSC.**
 
 ---
 
-*この文書はPSC（プランク球体宇宙論）の概念的入門および総合案内ノート。提案段階・未検証。VGT（仮想重力理論）・OFT（根源場理論）の一部として発展させる予定。2026年6月16日。Tsutomu Ishii（石井 努）Independent Researcher, Nagano, Japan*
+## 8. Document Guide
+
+| Document | Role |
+|----------|------|
+| planck_sphere_overview (this document) | Conceptual introduction and general guide |
+| planck_sphere_development | Development of ideas (12 stages) |
+| planck_sphere_equations | Complete equation overview, derivable quantities, cosmological scenarios |
+| planck_sphere_formulation | Mathematical formalization: axioms, theorems, propositions |
+
+---
+
+*This document is a conceptual introduction and general guide to PSC (Planck Sphere Cosmology). Proposed stage — unverified. Intended to be developed as part of VGT (Virtual Gravity Theory) and OFT (Origin Field Theory). June 16, 2026. Tsutomu Ishii, Independent Researcher, Nagano, Japan.*
