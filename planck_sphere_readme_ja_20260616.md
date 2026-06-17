@@ -130,7 +130,7 @@ This research was conducted through collaborative dialogue with Claude (Anthropi
 
 ## Citation / 引用
 
-Ishii, T. (2026). *Planck Sphere Theory: The Minimal Unit of the Universe and Its Unified Description of Fundamental Physics*. GitHub: PSC Repository. Zenodo. DOI: [pending]
+Ishii, T. (2026). *Planck Sphere Theory: The Minimal Unit of the Universe and Its Unified Description of Fundamental Physics*. GitHub: PSC Repository. Zenodo. DOI: 10.5281/zenodo.20736648
 
 ---
 
