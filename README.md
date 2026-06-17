@@ -7,6 +7,10 @@
 **Status:** Research Note / Preprint  
 **Related Repositories:** VGT, OFT  
 
+※ In this repository, the Planck Sphere is treated mathematically as a sphere since 4π (the solid angle of a sphere) appears in the core equation. However, whether the initial state and the present universe are truly spherical remains observationally unconfirmed. For details, see the notes in the development document and Axiom 3 in the formulation document.
+
+本リポジトリにおいてプランク球体を数学的計算上4πという球面の数値が確認されることから球体として扱う。ただし初期状態および現在の宇宙が真に球体であるか観測的に未確定である。詳細はdevelopment文書の注記およびformulation文書の公理3を参照されたい。
+
 ---
 
 ## Title / タイトル
@@ -53,7 +57,7 @@ $$\eta = \frac{\alpha^3}{16\pi^2} \approx 6.1 \times 10^{-10}$$
 
 と推定し、観測値との誤差1.7%以内の一致を示す。ここで係数16＝2⁴は4次元時空のディラックスピノル構造と同定される。結合定数αの変化による四力の分離過程も概説する。
 
-本論文はプランク球体をOFT（起源場理論）の根源場Ψ₀の幾何学的最小単位の候補として探索し、OFTおよびVGT（仮想重力理論）の統一的記述に向けた検証可能な枠組みの提示を試みる。
+本論文はプランク球体をOFT（根源場理論）の根源場Ψ₀の幾何学的最小単位の候補として探索し、OFTおよびVGT（仮想重力理論）の統一的記述に向けた検証可能な枠組みの提示を試みる。
 
 ---
 
@@ -70,7 +74,7 @@ $$\boxed{A_P \times c^3 = 4\pi \times \hbar \times G = 4\pi \times E_P \times t_
 | Information content of Planck Sphere | I = π bits | Derived |
 | Baryon asymmetry η | ≈ 6.1 × 10⁻¹⁰ (1.7% from observed) | Proposed |
 | Cosmological constant | Λ(t) ~ 1/R(t)² | Proposed |
-| Universe geometry | Spherical (4π necessary) | Proposed |
+| Universe geometry | Spherical-containing (4π confirmed mathematically) | Proposed |
 | Dark matter density | ρDM ~ H²/4πG | Proposed |
 
 ---
@@ -96,7 +100,7 @@ Planck sphere, quantum gravity, unified field theory, baryon asymmetry, cosmolog
 ## Relation to VGT/OFT / VGT・OFTとの関係
 
 ```
-根源場Ψ₀（OFT：起源場理論）
+根源場Ψ₀（OFT：根源場理論）
 　↓幾何学的最小単位として
 プランク球体（PSC：本論文）
 　↓展開・分岐
