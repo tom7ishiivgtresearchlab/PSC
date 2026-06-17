@@ -1,8 +1,8 @@
 # Planck Sphere Cosmology (PSC)
 ## プランク球体宇宙論
 
-**Author:** Tom Ishii（石井 牧師）  
-**Affiliation:** Kirisuto Kyodai Dan Ueda Church, Nagano, Japan  
+**Author:** Tsutomu Ishii（石井 努）  
+**Affiliation:** Independent Researcher, Nagano, Japan  
 **Date:** June 16, 2026  
 **Status:** Research Note / Preprint  
 **Related Repositories:** VGT, OFT  
@@ -129,4 +129,4 @@ Ishii, T. (2026). *Planck Sphere Theory: The Minimal Unit of the Universe and It
 
 ---
 
-*© 2026 Tom Ishii. This work is licensed under CC BY 4.0.*
+*© 2026 Tsutomu Ishii. This work is licensed under CC BY 4.0.*
