@@ -91,7 +91,8 @@ Planck sphere, quantum gravity, unified field theory, baryon asymmetry, cosmolog
 
 | File | Content |
 |------|---------|
-| `planck_sphere_theory_20260616.md` | 理論本体・概念的議論 |
+| `planck_sphere_overview_20260616.md` | 概念的入門・総合案内ノート |
+| `planck_sphere_development_20260616.md` | 思考の経過と発展（12段階） |
 | `planck_sphere_equations_20260616.md` | 式の全体整理・宇宙論的シナリオ |
 | `planck_sphere_formulation_20260616.md` | 数学的定式化・定理・命題 |
 
