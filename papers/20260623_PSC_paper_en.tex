@@ -1,0 +1,187 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=25mm]{geometry}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+\setlength{\parskip}{4pt}
+\renewcommand{\baselinestretch}{1.06}
+\newcommand{\eP}{\ell_P}
+
+\title{\bfseries Planck Sphere Cosmology:\\ A Unifying Image of a Planck-Scale Spherical State\\ --- What Can and Cannot Be Claimed}
+\author{Tsutomu Ishii\\ Independent Researcher, Nagano, Japan\\ ORCID: 0009-0001-3019-3929}
+\date{June 23, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper critically examines, by the author himself, the extent to which the claims of Planck Sphere Cosmology (PSC) actually hold. PSC takes the minimal unit of the universe to be a sphere of radius $\eP$ (the Planck length) and places at its center the core identity $A_P c^3 = 4\pi\hbar G$, based on the surface area, as a starting point from which to re-organize modern physics in a unified manner. We classify each relation into three levels --- identity transformation (L1), substitution into an existing formula (L2), and dimensional analysis (L3) --- and verify them with high-precision numerics (mpmath, 40 digits) and symbolic computation (sympy). We find that what PSC derives in a rigorous sense is limited to algebraic rewritings of the Planck unit system (L1); that the cosmological constant and the dark sector are not contained in a single-scale Planck sphere; and that for a perfect sphere the Weyl tensor vanishes identically, coinciding exactly with Penrose's low-entropy initial condition (though this is a geometric restatement of that hypothesis). We then take up an empirical relation that reproduces the observed baryon-to-photon ratio with no free parameters, $\eta = \alpha^3/(8\pi)^2$ (the cube of the electromagnetic coupling divided by the square of the gravitational normalization). We show honestly that the origin of its denominator is fixed while its generating mechanism is underived, that it does not arise naturally from known frameworks, and that its status (coincidence, structural necessity, or the manifestation of an unknown general principle) is currently undetermined. Finally we situate PSC within the no-boundary proposal, the Weyl curvature hypothesis, and loop quantum cosmology. The paper's first aim is to avoid overstatement and to make explicit what can and cannot be said.
+\end{abstract}
+
+\section{Introduction: motivation and the central image}
+PSC takes the minimal unit of the universe to be a sphere of radius $\eP$ (the Planck sphere) and, through its surface area $A_P = 4\pi\eP^2$, places at its center the identity
+\begin{equation}
+A_P \times c^3 = 4\pi \times \hbar \times G.
+\label{eq:core}
+\end{equation}
+The aim of this paper is to delineate critically at what level the claim ``modern physics can be derived from here'' actually holds, and to situate honestly one striking numerical relation associated with PSC. The value of a physical theory rests as much on accurately delimiting what cannot be claimed as on what can. We therefore use throughout the following three levels:
+\begin{description}[leftmargin=2.2em,style=nextline]
+\item[L1 (identity transformation)] An algebraic rewriting from the core identity or definitions. Mathematically exact but containing no new physical content.
+\item[L2 (substitution into an existing formula)] Substituting PSC quantities into an existing physical relation. Not a derivation unique to PSC.
+\item[L3 (dimensional analysis with a fitted coefficient)] Proportionality or order-of-magnitude follows, but the coefficient is fixed from observation. Strictly a proposed scaling rule, not a derivation.
+\end{description}
+The greatest danger is mistaking L3 for L1. Below we make explicit the level of each relation and confirm it numerically and symbolically. Our stance: dismantle what can be dismantled, and extend only what can be extended.
+
+\paragraph{The central working hypothesis.}
+The central image of this paper is the \emph{possibility that, in the early universe, a spherical region of about one Planck length in radius existed}. We take as our point of departure the idea that the basic quantities characterizing the later universe (energy, electric charge, curvature, information, and so on) were potentially contained as the interior, the surface, or the external action of that spherical state. This is purely a working hypothesis for exploration, not a claim about physical law. What matters is not to fix three things in advance: (i) we do not assume the interior of the sphere is a vacuum (no established picture exists for the interior of black holes, the early universe, or the Planck era, and there is no reason the interior of a sphere of radius $\eP$ must be empty); (ii) the three-layer organization that assigns a volume factor $4\pi/3$, a surface factor $4\pi$, and a normalization factor $8\pi$ to interior, surface, and external action is regarded not as a law but as a convenient organizing frame; (iii) hence the essential question is less ``did the sphere exist'' than ``\emph{what was latent inside it}'' (information, fields, curvature, low entropy). Under this working hypothesis we delineate what can and cannot be said rigorously.
+
+\section{The hard core: the identity and the algebra of Planck quantities (L1)}
+We first ask the status of the core identity \eqref{eq:core} itself. The standard definition of the Planck length is $\eP^2 = \hbar G/c^3$. Substituting this and $A_P = 4\pi\eP^2$ into the left-hand side of \eqref{eq:core},
+\begin{equation}
+A_P c^3 = 4\pi\eP^2 c^3 = 4\pi\!\left(\frac{\hbar G}{c^3}\right)\! c^3 = 4\pi\hbar G,
+\end{equation}
+which agrees identically with the right-hand side (and numerically to 40 digits, relative difference zero). Thus the core identity is not an independent physical hypothesis but a geometric rewriting of the definition of the Planck length (L1). The factor $4\pi$ is the solid angle of a sphere, introduced by the choice to ``make it a sphere''; the definition itself contains no geometry, so $4\pi$ generates no prediction.
+
+Likewise the equivalences $\hbar = E_P t_P$, $q_P^2 = 4\pi\varepsilon_0\hbar c$, $E_P = k_B T_P$, $e = q_P\sqrt{\alpha}$ all return to $4\pi\hbar G$ upon substitution; numerical checks give zero relative difference. In particular the two dimensionless quantities used later,
+\begin{equation}
+\alpha = \left(\frac{e}{q_P}\right)^2 \;(\text{electromagnetic coupling}),\qquad
+8\pi = \left(\frac{m_P}{M_{\rm red}}\right)^2 \;(\text{gravitational normalization}),
+\label{eq:alpha8pi}
+\end{equation}
+are exact algebraic relations, where $q_P$ is the Planck charge and $M_{\rm red}=m_P/\sqrt{8\pi}$ the reduced Planck mass; here $8\pi$ is the $8\pi$ of $8\pi G$ in Einstein's equations, i.e.\ the normalization of gravity in general relativity.
+
+This audit shows that PSC's relations split into three layers (Table~\ref{tab:audit}). The \textbf{L1 group} (core identity, fundamental constants, Planck quantities, the equivalences) are all identity transformations of the Planck-length definition --- a restatement of the known Planck unit system. The \textbf{L2 group} (information measure, dark-matter density) are substitutions into existing physics. The \textbf{L3 group} (cosmological constant, dark-energy density) remain dimensional analysis. Hence the claim that ``almost all of modern physics can be derived from the Planck sphere'' does not hold in a rigorous sense; what merits the name rigorous derivation is only the algebraic rewriting of the Planck unit system. This does not negate the theory but correctly delimits its scope to a defensible core.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Relation & Content & Level \\
+\midrule
+Core identity & $A_P c^3 = 4\pi\hbar G$ & L1 (rewriting of $\eP^2=\hbar G/c^3$) \\
+Fundamental constants & solve for $c,\,G,\,\hbar$ & L1 (algebra) \\
+Planck quantities & $\eP,\,t_P,\,E_P,\,m_P$ & L1 \\
+Electromagnetic equiv.\ & $A_P c^3 = q_P^2 G/\varepsilon_0 c$ & L1 (definition of $q_P$) \\
+Thermostatistical equiv.\ & $A_P c^3 = 4\pi k_B T_P t_P G$ & L1 ($E_P=k_B T_P$) \\
+Information measure & $I = A_P/4\eP^2 = \pi$ & L2 (geometric ratio + Bekenstein) \\
+Separation of forces & $A_P c^3 = e^2 G/\alpha\varepsilon_0 c$ & L1 (separation is standard QFT) \\
+Cosmological constant & $\Lambda \sim 1/R^2$ & L3 (dimensional analysis) \\
+Dark-matter density & $\rho_{\rm DM}\sim H^2/4\pi G$ & L2 (critical density, wrong coefficient) \\
+Dark-energy density & $\rho_{\rm DE}\sim 2\pi\hbar/A_P^2 c$ & L3 (Planck-density scale problem) \\
+\bottomrule
+\end{tabular}
+\caption{Derivation level of the main PSC relations.}
+\label{tab:audit}
+\end{table}
+
+\section{What is \emph{not} contained in the Planck sphere: $\Lambda$ and the dark sector}
+The only length scale internal to a Planck sphere of radius $\eP$ is $\eP$ itself. The cosmological constant and dark energy, by contrast, are quantities of a second scale, the cosmological scale $R_H$ (the Hubble radius). Their ratio is
+\begin{equation}
+\frac{R_H}{\eP}\approx 8.5\times10^{60},\qquad \left(\frac{R_H}{\eP}\right)^2\approx 10^{122},
+\end{equation}
+and the famous ``122 orders of magnitude'' of the cosmological constant problem is precisely the square of this ratio. A single-scale Planck sphere can generate neither a second scale nor the hierarchy connecting them. Hence the cosmological constant and the dark sector are not contained in a static, single-scale Planck sphere; what is missing is the dynamics of time evolution connecting the Planck scale to the cosmological scale.
+
+\section{Information, low entropy, and the geometry of the sphere}
+There is one clear positive geometric correspondence. For the closed Friedmann metric (a three-dimensional spherical space), all components of the Weyl tensor vanish identically (confirmed by symbolic computation in sympy). The Weyl tensor represents the free gravitational degrees of freedom, in contrast to the Ricci tensor fixed by matter; Penrose associated it with gravitational entropy and required it to vanish at the initial singularity (a low-entropy initial condition: the Weyl curvature hypothesis). Hence ``a perfect sphere $\Leftrightarrow$ vanishing Weyl $\Leftrightarrow$ minimal gravitational entropy'' is an exact correspondence.
+
+This is, however, not a new derivation. PSC merely posits the sphere as a working hypothesis and does not derive the \emph{reason} for low entropy; this remains a geometric restatement of the Weyl curvature hypothesis (L2). Note that the information measure $I = A_P/4\eP^2 = \pi$ coincides with the entropy $S = A/4\eP^2 = \pi$ of the minimal black hole of radius $\eP$ and mass $m_P$.
+
+\section{The early-universe picture: situating PSC among established frameworks}
+The picture PSC draws --- a real, small, low-entropy initial state --- is close to each of three independent, established frameworks.
+
+\textbf{Penrose's Weyl curvature hypothesis / conformal cyclic cosmology.} Vanishing Weyl (conformal flatness) at the initial singularity, i.e.\ low entropy. PSC's ``sphere = smooth = vanishing Weyl = low entropy'' is identical to this.
+
+\textbf{The Hartle--Hawking no-boundary proposal.} The wave function of the universe is given by a path integral, replacing the Big Bang singularity with a smooth geometry. Its prototypical instanton is precisely a Euclidean four-sphere, and a low-entropy initial state emerges naturally from the ground state. But this sphere is a saddle point in imaginary (Euclidean) time, a mathematical device for computing a tunneling amplitude, not a real Lorentzian object.
+
+\textbf{Loop quantum cosmology.} The singularity is resolved by a quantum bounce, occurring when the energy density reaches about $0.41\,\rho_{\rm Planck}$. However, the volume at the bounce is proportional to the matter content and is not fixed to $\eP$.
+
+PSC thus sits at the intersection of these three. That the Planck sphere is a unique and necessary initial state cannot be derived in any of them. What PSC alone commits to is the single point that ``a \emph{real}, Lorentzian sphere of radius exactly $\eP$ is taken as the literal initial state'' --- at present an unmotivated assumption. For reference, the direction of the no-boundary proposal (Euclidean, a smooth ground state) and that of loop quantum cosmology (Lorentzian, a real bounce) have been shown by Bojowald and Brahma to admit a possible connection through a non-singular dynamical signature change in the Planck regime.
+
+\section{A striking empirical relation: the cube of electromagnetism over the square of gravity}
+We now take up one numerical relation associated with PSC and delineate its status honestly. From the two dimensionless quantities of \eqref{eq:alpha8pi}, the electromagnetic coupling $\alpha$ and the gravitational normalization $8\pi$, one can form
+\begin{equation}
+\eta \;=\; \frac{\alpha^3}{(8\pi)^2} \;=\; \frac{\alpha^3}{64\pi^2}
+\;=\; \left(\frac{e}{q_P}\right)^{6}\!\left(\frac{M_{\rm red}}{m_P}\right)^{4}.
+\label{eq:eta}
+\end{equation}
+This is literally ``the cube of the electromagnetic coupling divided by the square of the gravitational normalization.'' With the low-energy coupling $\alpha=\alpha(0)=1/137.036$,
+\begin{equation}
+\eta = 6.152\times10^{-10},
+\end{equation}
+which agrees to about $0.5\%$ with the observed cosmic baryon-to-photon ratio $n_b/n_\gamma \approx 6.12\times10^{-10}$. Relation \eqref{eq:eta} contains \textbf{no free parameters whatsoever}.
+
+\subsection{What is fixed: the origin of the denominator}
+The origin of the denominator $64\pi^2$ is fixed. From \eqref{eq:alpha8pi}, $64\pi^2 = (8\pi)^2 = (m_P/M_{\rm red})^4$, an exact algebraic relation determined uniquely by the definition of the reduced Planck mass. The denominator is thus the square of the $8\pi$ of general relativity, not a fitted number.
+
+\subsection{What is not fixed: the mechanism is underived}
+Why ``the cube of electromagnetism'' and ``the square of gravity'' combine in this form to give the observed value is not derived. We searched systematically for a mechanism but could reproduce \eqref{eq:eta} in none of the directions below \emph{without inputting it as the answer in advance}.
+\begin{itemize}[leftmargin=1.4em]
+\item \textbf{Standard baryogenesis.} In known mechanisms (GUT decay, electroweak, leptogenesis, gravitational baryogenesis coupled to curvature) the smallness of the observed value arises from ratios involving CP violation, departure from equilibrium, and decoupling temperature. These never take the form ``(coupling)$^3 \times$ (pure geometry).'' The \emph{type} of source of smallness differs, so \eqref{eq:eta} does not arise naturally.
+\item \textbf{Spectral geometry (heat-kernel expansion).} The heat kernel of the Laplacian/Dirac operator in four dimensions naturally yields the prefactor $1/(4\pi)^2 = 1/(16\pi^2)$. But this differs by a factor of four from the required $1/(64\pi^2)$, and the missing $1/4$ has no independent motivation; moreover the cube of the electromagnetic coupling never appears from pure geometry.
+\item \textbf{Index theorems.} Quantities given by index theorems are integers (characteristic numbers) and cannot directly yield $64\pi^2$ (an irrational number).
+\end{itemize}
+In short, $\alpha^3$ and $1/(8\pi)^2$ exist individually as components in known physics, but no single known process produces both ``exactly as a product, with no extra factors.''
+
+\subsection{How to evaluate the numerical agreement}
+A zero-parameter agreement is impressive, but to avoid overestimation we counted how many simple expressions built from $\alpha$ and $\pi$ fall near the observed value. With a tolerance of order the observational error (about $1\%$), several comparably simple expressions lie in this neighborhood, some of them numerically closer than \eqref{eq:eta}. Hence \emph{numerical closeness alone is not decisive}. The distinctive feature of \eqref{eq:eta} is not the number but its \emph{structure}: its denominator is forced as an exact algebraic relation rather than fitted.
+
+\subsection{A peculiarity: the absence of any hierarchy}
+A further observation. Most small cosmological or particle-physics quantities are governed by huge hierarchy ratios: the cosmological constant by the cosmological hierarchy $(\eP/R_H)^2\sim10^{-122}$, and Beck's proposed relation for the cosmological constant by the mass hierarchy $(m_e/m_P)^6$ of the electron Compton length to the Planck length. By contrast \eqref{eq:eta} contains \emph{no hierarchy ratio}, being small from a power of a low-energy coupling and pure geometric factors alone. In this sense $\eta$ is isolated and does not form a common structure (e.g.\ a family of powers of $\alpha$) with other observables. Yet isolation is not in itself evidence of deep meaning; it is equally compatible with coincidence.
+
+\subsection{Status: held in reserve among three possibilities}
+Accordingly we leave the status of \eqref{eq:eta} \textbf{undetermined}, among three possibilities:
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Coincidence} --- a mere numerical agreement (the agreement is, as noted, only mildly rare).
+\item \textbf{Structural necessity} --- a structural ratio intrinsic to the Planck-sphere working hypothesis (no positive evidence at present).
+\item \textbf{Manifestation of an unknown general principle} --- a still-unknown principle making the form ``(coupling)$^3 \times$ (small geometric factor)'' necessary; this need not be specific to a particular hypothesis but could be a cross-section of a larger theory.
+\end{enumerate}
+What could move this reserve in future is an improvement in the precision of the observed baryon-to-photon ratio (if the present central value holds while precision reaches the $0.1\%$ level, the $0.5\%$ deviation of \eqref{eq:eta} becomes subject to test or refutation), or a more rigorous demonstration of the above impossibility, or, conversely, the discovery of a mechanism.
+
+\section{Methodology: a discipline of honesty}
+This work proceeded throughout under one discipline: always distinguishing established physics, definitions and identities, numerical agreements, and speculative hypotheses, and stating the underived as underived. In particular, the procedure of ``first finding an attractive numerical agreement and then assigning meaning to its parts (e.g.\ powers of $64$ or $\pi$)'' admits arbitrary post-hoc fitting, and we did not regard it in itself as a result. In searching for the mechanism of \eqref{eq:eta} we imposed the self-discipline of not inputting the answer into a model in advance, counting it as a result only when it emerged naturally. All numerics were verified with mpmath at 40-digit precision and with symbolic computation in sympy, checking primary sources where possible. The examination was carried out through mutual criticism between two independent analytical aides (different large language models) and the author, and the conclusions agreed.
+
+\section{Summary: what can and cannot be said}
+\begin{center}\small
+\begin{tabular}{@{}p{0.46\linewidth}p{0.46\linewidth}@{}}
+\toprule
+\textbf{Can be said (established / fixed)} & \textbf{Cannot be said (underived / speculative)} \\
+\midrule
+The core identity, equivalences, and Planck quantities are exact as identity transformations of the Planck-length definition (L1) & that they are ``new physics'' (a restatement of the known Planck unit system) \\
+For a perfect sphere, vanishing Weyl = low entropy is an exact correspondence & the \emph{reason} for low entropy (the sphere is only posited) \\
+$\eta=\alpha^3/(8\pi)^2$ agrees with the observed baryon-to-photon ratio to $0.5\%$, with no parameters & its generating mechanism (not naturally derivable from known frameworks) \\
+The origin of $64\pi^2=(8\pi)^2$ is fixed (square of the gravitational normalization) & whether $\eta$ is coincidence, structural necessity, or an unknown principle (reserved) \\
+$\Lambda$ and the dark sector are not contained in a single-scale sphere & the dynamics of evolution to a second scale \\
+PSC sits at the intersection of three established frameworks & the uniqueness/reality of the Planck sphere, or any unique falsifiable prediction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The remaining open questions are: (i) the status of \eqref{eq:eta}; (ii) what was latent inside the Planck sphere (information, fields, curvature, low entropy); (iii) a dynamical justification for why the initial state must be a real sphere of radius $\eP$; and (iv) the law of evolution from the Planck scale to the cosmological scale. All belong to the unsolved frontier of modern physics.
+
+\section{Conclusion}
+This paper critically examined Planck Sphere Cosmology by the author himself. First, what PSC rigorously derives is limited to algebraic rewritings of the Planck unit system (L1). Second, the cosmological constant and the dark sector are not contained in a static, single-scale Planck sphere. Third, the positive fact that the Weyl tensor vanishes for a perfect sphere, coinciding with the low-entropy initial condition, does hold, but it is a geometric restatement of the Weyl curvature hypothesis. Fourth, PSC can be presented honestly as a unifying re-organization situated at the intersection of the Weyl curvature hypothesis, the no-boundary proposal, and loop quantum cosmology, rather than as a novel theory yielding new predictions. Fifth, the number $\eta=\alpha^3/(8\pi)^2$ --- the cube of electromagnetism over the square of gravity --- is a parameter-free empirical relation that reproduces the observed baryon-to-photon ratio well; the origin of its denominator is fixed, but its mechanism is underived and its status is reserved. The aim has been to avoid overstatement and, under the single image of the Planck sphere, to delineate ``this much can be said; beyond this, not yet.'' The unification is presented not as a derivation but as a \emph{central image} surveying several established pictures together with one striking empirical relation.
+
+\section*{Appendix: methods, verification, and a record of what was discarded}
+\textbf{Methods and verification.} All numerics were computed with Python's mpmath at 40-digit precision using CODATA values. The Weyl tensor was computed symbolically in sympy, confirming that all components of the closed Friedmann metric vanish. The identities of the core relation and the equivalences, $64\pi^2=(8\pi)^2=(m_P/M_{\rm red})^4$, the four-dimensional heat-kernel prefactor $1/(16\pi^2)$, and the search over simple $\alpha$--$\pi$ expressions were all checked by these computations.
+
+\textbf{Record of what was discarded.} In the course of the work the following were rejected or reserved: the hypothesis that gravitational baryogenesis directly yields \eqref{eq:eta} (its smallness comes from a temperature ratio, not $\alpha^3$); reading the $3$ in the numerator as a generation number; reading the $16$ in the denominator as a spinor structure; the decomposition $\eta=\alpha(\alpha/8\pi)^2$ (its form resembles an anomaly coefficient but corresponds to no single process and remains post-hoc). For reference, committing to a real sphere of fixed radius $\eP$ fixes the bounce density at $3/(4\pi)\approx0.239\,\rho_{\rm Planck}$, different from the $0.41\,\rho_{\rm Planck}$ of loop quantum cosmology; but this is not an observable and depends on assumptions, so it is an exploratory seed, not an established prediction.
+
+\begin{thebibliography}{9}\small
+\bibitem{HH} J. B. Hartle, S. W. Hawking, \textit{Wave function of the Universe}; review: \textit{Review of the No-Boundary Wave Function}, arXiv:2303.08802.
+\bibitem{saddle} J. Feldbrugge, J.-L. Lehners et al., \textit{Path integrals, saddle points and the beginning of the universe}, arXiv:2303.11450 (no-boundary saddle as a Euclidean four-sphere $S^4$).
+\bibitem{Penrose} R. Penrose, Weyl curvature hypothesis / conformal cyclic cosmology; \textit{CCC, gravitational entropy and quantum information}, Gen. Rel. Grav. (2023).
+\bibitem{LQC} A. Ashtekar et al., \textit{Singularity Resolution in Loop Quantum Cosmology: A Brief Overview}, arXiv:0812.4703.
+\bibitem{LQCvol} \textit{On the evolution of the volume in Loop Quantum Cosmology}, arXiv:2311.18066 (matter dependence of the bounce volume).
+\bibitem{BB} M. Bojowald, S. Brahma, \textit{Loops Rescue the No-Boundary Proposal}, Phys. Rev. Lett. \textbf{121}, 201301 (2018), arXiv:1810.09871.
+\bibitem{Beck} C. Beck, \textit{Cosmological constant, fine structure constant and beyond}, Eur. Phys. J. C (2016), arXiv:1605.04571.
+\bibitem{baryo} Review: \textit{Baryogenesis}, Rev. Mod. Phys. \textbf{93}, 035004 (2021).
+\end{thebibliography}
+
+\end{document}
